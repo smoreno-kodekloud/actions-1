@@ -20,6 +20,9 @@ jobs:
         
     deploy:
         needs: docker
+        concurrency:
+          group: concurrency-test
+          cancel-in-progress: true
         runs-on: ubuntu-latest
         steps:
             - name: Docker Run
