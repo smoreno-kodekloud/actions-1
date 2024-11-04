@@ -2,4 +2,4 @@
 First example of Github actions
 
 # New commit
-Some random test
+Some random test for testing
