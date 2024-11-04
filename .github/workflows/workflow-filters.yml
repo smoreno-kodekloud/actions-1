@@ -10,8 +10,8 @@ on:
         types:
             - opened
             - closed
-        branches-ignore: # workflow will only run when a pull request that includes a change on any file other than  README.md
-            - README.md
+        #branches-ignore: # workflow will only run when a pull request that includes a change on any file other than  README.md
+        #    - README.md
         branches: # configures your workflow to only run on pull requests that target specific branches
             - main
 
@@ -20,4 +20,4 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - run: echo this workflow/job/step is executed for event type - ${{ github.event_name }}
-            
+
